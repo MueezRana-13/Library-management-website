@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Book - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="LibraryMS Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="admin_dashboard.html" class="nav-link">Dashboard</a></li>
+            <li><a href="manage_books.html" class="nav-link">Manage Books</a></li>
+            <li><a href="issued_books.html" class="nav-link">Issued Books</a></li>
+            <li><a href="manage_members.html" class="nav-link">Manage Members</a></li>
+            <li><a href="logout.html" class="btn-login">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="admin-page-title">
+    <h1>Issue Book</h1>
+    <p>Assign a book to a library member.</p>
+</section>
+
+<section class="admin-content">
+    <div class="form-container">
+        <form action="#" method="post">
+
+            <div class="input-group">
+                <i class="fas fa-book"></i>
+                <select required>
+                    <option disabled selected>Select Book</option>
+                    <option>The Great Gatsby</option>
+                    <option>A Brief History of Time</option>
+                    <option>Clean Code</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <select required>
+                    <option disabled selected>Select Member</option>
+                    <option>Ali Raza</option>
+                    <option>Sara Khan</option>
+                    <option>Ahmed Hassan</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-calendar-alt"></i>
+                <input type="date" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fas fa-calendar-check"></i>
+                <input type="date" required>
+            </div>
+
+            <button type="submit" class="btn">Issue Book</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>LibraFlow</h3>
+            <p>&copy; 2026 All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

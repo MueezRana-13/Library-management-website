@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="images/logo.png" alt="Library Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="user_dashboard.html">Dashboard</a></li>
+            <li><a href="user_books.html" class="active">Books</a></li>
+            <li><a href="user_fines.html">Fines</a></li>
+            <li><a href="logout.html" class="btn-login">Logout</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="admin-page-title">
+    <h1>Available Books</h1>
+    <p>Browse all books in the library.</p>
+</section>
+
+<section class="admin-content">
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Fiction</td>
+                    <td><span class="status available">Available</span></td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Atomic Habits</td>
+                    <td>James Clear</td>
+                    <td>Self-Help</td>
+                    <td><span class="status issued">Issued</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2026 LibraFlow</p>
+    </div>
+</footer>
+
+</body>
+</html>
